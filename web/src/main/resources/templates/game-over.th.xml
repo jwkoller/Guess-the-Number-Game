@@ -1,0 +1,7 @@
+<thlogic>
+    <attr sel="#headId" th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="#result-message" th:text="${__${T(koller.learningspring.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#play-again" th:href="@{__${T(koller.learningspring.util.GameMappings).RESTART}__}"/>
+    <attr sel="#home" th:href="@{__${T(koller.learningspring.util.GameMappings).HOME}__}"/>
+    <attr sel="#footerId" th:replace="~{fragments/footer::footerFragment}"/>
+</thlogic>

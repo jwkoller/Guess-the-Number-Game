@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head::headFragment}">
+<html lang="en">
+<head id="headId">
     <meta charset="UTF-8">
     <title>Game Over</title>
 </head>
@@ -8,23 +8,23 @@
     <div align="center">
         <h1>Guess the Number Game</h1>
         <h2>Game Over</h2>
-        <h3 th:text="${__${T(koller.learningspring.util.AttributeNames).RESULT_MESSAGE}__}">
+        <h3 id="result-message">
             Result Message
         </h3>
 
         <h3>
-            <a th:href="@{__${T(koller.learningspring.util.GameMappings).RESTART}__}">
+            <a id="play-again">
                 Play Again
             </a>
         </h3>
 
         <h3>
-            <a th:href="@{__${T(koller.learningspring.util.GameMappings).HOME}__}">
+            <a id="home">
                 Home
             </a>
         </h3>
 
-        <footer th:replace="~{fragments/footer::footerFragment}"/>
+        <footer id="footerId"/>
 
     </div>
 
